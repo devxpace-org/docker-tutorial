@@ -2,9 +2,9 @@ pipeline {
     agent any
 
     stages {
-        stage('Hello') {
+        stage('Build and Deploy') {
             steps {
-                echo 'Hello World'
+                sh 'mkdir /home/ec2-user/test'
             }
         }
     }
