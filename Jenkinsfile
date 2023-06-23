@@ -4,7 +4,8 @@ pipeline {
     stages {
         stage('Build and Deploy') {
             steps {
-                sh 'mkdir /home/ec2-user/test'
+                sh 'echo "test"',
+                sh 'echo "test2"'
             }
         }
     }
