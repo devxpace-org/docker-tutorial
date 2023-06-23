@@ -1,10 +1,10 @@
 FROM node:20-alpine
 
-COPY package.json /app/
-COPY src /app/
+COPY package.json /app/devxpace/
+COPY src /app/devxpace/
 
-WORKDIR /app
+WORKDIR /app/devxpace
 
 RUN npm install
 
-ENTRYPOINT ["node", "example.js"]
+ENTRYPOINT ["node", "helloworld.js"]
