@@ -4,8 +4,7 @@ pipeline {
     stages {
         stage('Build and Deploy') {
             steps {
-                sh 'echo "test"',
-                sh 'echo "test2"'
+                sh 'docker build -t devxpace-test:1.0 .'          
             }
         }
     }
