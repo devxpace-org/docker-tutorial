@@ -6,6 +6,7 @@ pipeline {
             steps {
                 sh '''sudo docker build -t devxpace-test:1.0 .
                       sudo docker tag devxpace-test:1.0 poornarallapalli/devxpace:home1.0
+                      sudo docker login poornarallapalli -u poornarallapalli -p Neeyathi19$
                       sudo docker push poornarallapalli/devxpace:home1.0
                 '''          
             }
